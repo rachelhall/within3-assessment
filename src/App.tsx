@@ -16,7 +16,9 @@ function App() {
   const { data, loading, error } = useQuery<IMissions, IMissionsVars>(
     GET_MISSIONS,
     {
-      variables: { limit: numberOfResults },
+      variables: {
+        limit: numberOfResults,
+      },
     }
   );
 
@@ -40,10 +42,6 @@ function App() {
   }, [data?.missions, sortDirection]);
 
   const filteredMissions = filterMissions(alphabetizedMissions, searchTerm);
-
-  // const filteredMissions = alphabetizedMissions?.filter((mission) => {
-  //   return mission.name.toLowerCase().includes(searchTerm.toLowerCase());
-  // });
 
   if (loading) {
     return <p>Loading...</p>;

@@ -12,16 +12,14 @@ export const TextInput: React.FC<IProps> = (props) => {
   const { placeholder, text, setText } = props;
 
   return (
-    <div>
-      <input
-        placeholder={placeholder}
-        className="TextInput"
-        inputMode="search"
-        value={text}
-        type="text"
-        onChange={(e) => setText(e.target.value)}
-      />
-    </div>
+    <input
+      placeholder={placeholder}
+      className="TextInput"
+      inputMode="search"
+      value={text}
+      type="text"
+      onChange={(e) => setText(e.target.value)}
+    />
   );
 };
 

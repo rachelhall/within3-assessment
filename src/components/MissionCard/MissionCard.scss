@@ -4,8 +4,14 @@
   box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.31);
   border: 1px solid rgb(204, 204, 204);
   border-radius: 5px;
+  color: #222;
+  background-color: #fff;
+  & a {
+    text-decoration: underline;
+    color: rgb(81, 81, 81);
+  }
 }
 
 .MissionCard--text {
-  padding: 0.5rem;
+  padding: 1rem;
 }

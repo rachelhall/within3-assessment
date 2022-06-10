@@ -25,25 +25,3 @@ export const GET_MISSION = gql`
     }
   }
 `;
-
-// export const GET_LAUNCHES = gql`
-//   query Launches($limit: Int) {
-//     launches(limit: $limit) {
-//       mission_name
-//       launch_date_utc
-//       mission_id
-//     }
-//   }
-// `;
-
-// export const GET_LAUNCH = gql`
-//   query Launch($launchId: ID!) {
-//     launch(id: $launchId) {
-//       details
-//       id
-//       mission_id
-//       launch_date_utc
-//       launch_success
-//     }
-//   }
-// `;

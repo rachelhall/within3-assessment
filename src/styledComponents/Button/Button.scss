@@ -1,5 +1,8 @@
 .Button {
-  background-color: unset;
+  background-color: #ff385c;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.31);
+  color: white;
+  font-weight: 800;
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
@@ -7,7 +10,7 @@
   padding: 0.5rem 1rem;
   overflow: visible;
   text-transform: none;
-  border: 1px solid #999;
+  border: unset;
   border-radius: 5px;
   -webkit-appearance: button;
 }
