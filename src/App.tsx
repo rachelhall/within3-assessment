@@ -11,13 +11,12 @@ import { filterMissions } from "./utils/filterMissions";
 function App() {
   const [searchTerm, setSearchTerm] = useState("");
   const [sortDirection, setSortDirection] = useState<"desc" | "asc">("desc");
-  const [numberOfResults, setNumberOfResults] = useState(10);
 
   const { data, loading, error } = useQuery<IMissions, IMissionsVars>(
     GET_MISSIONS,
     {
       variables: {
-        limit: numberOfResults,
+        limit: 10,
       },
     }
   );
